@@ -1,82 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Typing Animation</title>
-  <style>
-    body {
-      font-family: 'Courier New', monospace;
-      background: #111;
-      color: #0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-size: 1.5rem;
-    }
+## Hi there! 👋
 
-    .typing-container {
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 2px solid #0f0;
-      width: 0ch;
-      animation: typing 3s steps(40) 1s forwards, blink 0.75s step-end infinite;
-    }
+Hi, I'm Santosh Redlam — a passionate software developer skilled in building responsive web apps. I enjoy solving real-world problems with clean code and constantly explore new technologies to create meaningful digital solutions.
 
-    @keyframes typing {
-      from { width: 0ch; }
-      to { width: 40ch; }
-    }
+## About Me
 
-    @keyframes blink {
-      50% { border-color: transparent; }
-    }
+I am a dedicated developer with experience in various programming languages and frameworks. I am always eager to learn and grow in my field. Currently, I am based in India and exploring opportunities in software development.
 
-    .hidden {
-      display: none;
-    }
-  </style>
-</head>
-<body>
+## Skills & Technologies
 
-  <div id="typing" class="typing-container"></div>
+[![My Skills](https://skillicons.dev/icons?i=html,css,php,git,github,react,java,mysql,spring,nodejs,cpp,c,django,nextjs,mongodb,fastapi,maven&perline=8)](https://skillicons.dev)
 
-  <script>
-    const phrases = [
-      "a passionate software developer",
-      "an enthusiastic web developer",
-      "eager to learn new technologies",
-      "a hard worker"
-    ];
+## Projects
 
-    const typingDiv = document.getElementById("typing");
-    let i = 0;
+- [Bynary-frontend](https://github.com/RRSSsantosh-cse/Bynary-frontend)
+  - A front-end application for Bynary.
 
-    function typePhrase(phrase, callback) {
-      typingDiv.style.width = '0ch';
-      typingDiv.innerHTML = "";
-      let index = 0;
+- [YMS-RINL](https://github.com/RRSSsantosh-cse/YMS-RINL)
+  - A project for managing YMS RINL.
 
-      const interval = setInterval(() => {
-        typingDiv.innerHTML += phrase.charAt(index);
-        index++;
-        if (index === phrase.length) {
-          clearInterval(interval);
-          setTimeout(callback, 1500);
-        }
-      }, 100);
-    }
 
-    function startTypingLoop() {
-      typePhrase(phrases[i], () => {
-        i = (i + 1) % phrases.length;
-        setTimeout(startTypingLoop, 500);
-      });
-    }
+- [skills-copilot-codespaces-vscode](https://github.com/RRSSsantosh-cse/skills-copilot-codespaces-vscode)
 
-    startTypingLoop();
-  </script>
 
-</body>
-</html>
+- [MiniProject](https://github.com/RRSSsantosh-cse/MiniProject)
+  - A small project demonstrating key concepts.
+
+
+- [FSM_IITD-AIA_ML](https://github.com/RRSSsantosh-cse/FSM_IITD-AIA_ML)
+  - A machine learning project for IIT Delhi.
+
+## Recent Activity
+
+- Updated [Bynary-frontend](https://github.com/RRSSsantosh-cse/Bynary-frontend) with new features.
+- Committed changes to [YMS-RINL](https://github.com/RRSSsantosh-cse/YMS-RINL).
+- Opened an issue in [skills-copilot-codespaces-vscode](https://github.com/RRSSsantosh-cse/skills-copilot-codespaces-vscode).
+- Pushed updates to [MiniProject](https://github.com/RRSSsantosh-cse/MiniProject).
+- Contributed to [FSM_IITD-AIA_ML](https://github.com/RRSSsantosh-cse/FSM_IITD-AIA_ML).
+
+
+
+
+## Connect with Me
+
+<a href="https://www.linkedin.com/in/santosh-redlam-06a5771bb/" target="_blank" rel="noopener noreferrer"><Icon /> Linkedin</a> | <a href="https://www.hackerrank.com/profile/rrsssantosh" target="_blank" rel="noopener noreferrer"><Icon /> Hackerrank</a>
